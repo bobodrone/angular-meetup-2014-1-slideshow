@@ -1,0 +1,27 @@
+<input class="form-control searchbox" type="text" placeholder="Search for a slide" ng-model="searchtext">
+
+<div class="slides-list" ng-repeat="slide in slides | filter: searchtext">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Slide {{slide.id}}</h3>
+    </div>
+
+    <div class="panel-body row">
+      <div class="col-xs-2">
+        <img class="image" ng-src="img/{{slide.image}}" ng-if="slide.image"/>  
+      </div>
+      <div class="col-xs-4">
+        <h2 class="title">{{slide.header}}</h2>
+      </div>
+      <div class="col-xs-5">
+        <div class="body" ng-bind-html="slide.text"></div>
+      </div>
+    </div>  
+  </div>
+</div>
+
+<div class="operations">
+  <a class="btn btn-warning" href="/#/slides/edit">Edit</a>
+  <a class="btn btn-danger" href="/#/slides">View</a>
+</div>

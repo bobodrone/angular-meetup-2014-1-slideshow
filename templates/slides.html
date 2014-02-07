@@ -1,0 +1,15 @@
+<carousel interval="-1">
+  <slide class="slide" ng-repeat="slide in slides">
+    <img class="image" ng-src="img/{{slide.image}}" ng-if="slide.image"/>
+    <div class="carousel-caption">
+      <h2 class="title">{{slide.header}}</h2>
+      <div class="body" ng-bind-html="slide.text"></div>
+    </div>
+  </slide>
+</carousel>
+
+<div class="operations">
+  <a class="btn btn-warning" href="/#/slides/edit">Edit</a>
+  <a class="btn btn-danger" href="/#/slides/list">List</a>
+  <button class="btn btn-danger" ng-click="resetJSON()">Reset</button>
+</div>

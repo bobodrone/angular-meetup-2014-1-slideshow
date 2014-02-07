@@ -1,0 +1,19 @@
+[
+  {"id": "1","header": "<ng-newbie> Kickstart","image": "green.png","text": "<h3>- en introduktion till Angular JS</h3><br><p><i>Fredric Bergström, KNTNT</i><br>fredric@bobodrone.com<br>#bobodrone</p>"},  
+  
+  {"id": "2","header": "Agenda","image": "green.png","text": "<ul><li>Vad är Angular JS?</li><li>Vad kan jag göra med Angular JS?</li><li>Hur kommer man igång?</li><li><span>Grundläggande begrepp</span><ul><li>Directives, 2way Data binding, Filter...</li><li>Views, Controllers and Scope...</li><li>Modules, Routes, Factories...</li></ul></li><li>Hur kommer jag vidare?</li><li>Hur kan jag hjälpa till?</li></ul>"},
+
+ {"id": "3","header": "Vad är Angular JS?","image": "green.png","text": "<h1>ng-repeat | Modules | Routes | Views | $scope | $rootScope | Controllers | Models | Directives | Factory/Service/Providers | Filters | Transclusion | Promises | Dependency Injection | Interceptor | $apply | $watch | Karma/Protractor/EndToEndTest...</h2>"},
+
+  {"id": "4","header": "Vad är Angular JS?","image": "green.png","text": "<p><b><i>\"Angular JS är vad HTML hade varit idag OM det var tänkt att man skulle köra applikationer i webbläsaren\"</i></b></p><p>Angular JS är ett komplett (frontend) ramverk byggt i Javascript.</p><p>Angular JS utvecklas av Google.<br><i>Misko Hevery, Vojta Jina, Igor Minar, Brad Green m. fl</i></p><p>Projektet är ca 4 år gammalt</p><p>Open Source (MIT)<br>ca 640 contributors idag.</p>"},
+  
+  {"id": "5","header": "Vad är Angular JS?","image": "green.png","text": "<p>För Single Page Applications (SPA) men kan även byggas in i befintliga system.</p><p>Arbetar med ett MVC-utvecklarmönster genom att försöka separera DATA, PRESENTATION och LOGIK.</p><p>Extendar/vidareutveckla HTML-språket på ett enkelt sätt genom att skapa sina egna HTML-taggar/element sk. \"Directive\".</p><p>En smart och snabb DOM-manipulering (än t ex jQuery)</p><p>Har ett inbyggt templating-system och routing-system</p><p>Har ett eget system för att hämta data från externa källor (ngResource eller $http)</p><p>Angular JS är pluggbart!</p>"},
+  
+  {"id": "6","header": "Vad kan jag göra med Angular JS?","image": "green.png","text": "<p>Bygga fullt fungerade dynamiska webbappar: SPA (Single Page Applications) från grunden med routing och templating-system.</p><p>Bygga in hela eller delar av Angular JS i ditt befintliga webbprojekt enkelt utan att riskera att krocka med andra kodbibliotek.</p>Snabbt prototypa wireframes, användarinterface, koncept och idéer i logiskt fungerande modeller/appar.<br><br><p>Mycket mycket mer...</p>"},
+
+    {"id": "7","header": "Hur kommer jag igång?","image": "green.png","text": "<h2>Gå till: <a href=\"http://angularjs.org\">http://angularjs.org</a></h2><ul><li>Testa startsidans exempel</li><li>Ladda ner Angular JS</li><li>Se på videos!</li><li>Följ Tutorial</li><li>Kolla in Developer guide</li><li>Läs API dokumentation</li><li>Deltag i issue queue på github!</li></ul>"}
+
+
+
+
+]

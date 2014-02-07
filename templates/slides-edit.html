@@ -1,0 +1,47 @@
+<form class="form-horizontal" role="form">
+
+  <div class="alert alert-success confirmbox" ng-show="savedSlides">Slides are saved!</div>
+  
+  <div class="row slide-edit" ng-repeat="(index, slide) in slides">
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Slide {{slide.id}}</h3>
+        <button class="pull-right btn btn-link glyphicon glyphicon-chevron-down" ng-click="move(index, index+1)"></button>
+        <button class="pull-right btn btn-link glyphicon glyphicon-chevron-up" ng-click="move(index, index-1)"></button>
+      </div>
+      <div class="panel-body">
+        
+        <div class="form-group">
+          <label for="header{{slide.id}}" class="col-sm-2 control-label">Header</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="header{{slide.id}}" placeholder="Header" ng-model="slide.header">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="image{{slide.id}}" class="col-sm-2 control-label">Image</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="image{{slide.id}}" placeholder="Image URL" ng-model="slide.image">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="text{{slide.id}}" class="col-sm-2 control-label">Text</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" id="text{{slide.id}}" ng-model="slide.text"></textarea>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-success" ng-click="addSlide()">Add slide</button>
+      <button type="submit" class="btn btn-success" ng-click="updateSlides()">Save</button>
+      <button type="submit" class="btn btn-danger" ng-click="cancelUpdate()">Go back</button>
+    </div>
+  </div>
+  
+</form>
